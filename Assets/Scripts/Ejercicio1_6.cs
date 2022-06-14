@@ -27,7 +27,7 @@ public class Ejercicio1_6 : MonoBehaviour
 
         else
         {
-            for (int i=0; i<cantVeces-1; i++)
+            for (int i=0; i<cantVeces; i++)
             {
                 Debug.Log(cadena);
             }
