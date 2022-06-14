@@ -15,7 +15,13 @@ public class Funciones : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            GameObject clon = Instantiate(gameObject);
+            clon.AddComponent<Rigidbody>();
         }
     }
 }
